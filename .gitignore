@@ -1,5 +1,6 @@
 dist
 .venv
+*/venv
 exemplo
 */__pycache__
 *.session
