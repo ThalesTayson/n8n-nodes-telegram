@@ -1,0 +1,9 @@
+declare module '@sentry/node';
+declare module '@codemirror/autocomplete';
+declare module '@langchain/core/callbacks/manager';
+declare module '@n8n/config';
+declare module 'axios';
+declare module 'express';
+declare module 'nock';
+declare module 'ssh2';
+declare module 'luxon';

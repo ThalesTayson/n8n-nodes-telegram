@@ -1,0 +1,6 @@
+dist
+.venv
+exemplo
+*/__pycache__
+*.session
+node_modules

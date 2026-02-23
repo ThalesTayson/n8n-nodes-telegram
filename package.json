@@ -1,0 +1,47 @@
+{
+  "name": "n8n-nodes-telegram",
+  "version": "0.1.0",
+  "description": "Telegram MTProto (Telethon) integration for n8n",
+  "keywords": ["n8n-community-node-package", "n8n", "telegram", "telethon"],
+  "license": "MIT",
+  "author": "Thales Tayson",
+  "homepage": "https://github.com/ThalesTayson/n8n-nodes-telegram",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThalesTayson/n8n-nodes-telegram.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThalesTayson/n8n-nodes-telegram/issues"
+  },
+  "main": "dist/index.js",
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+  "files": ["dist", "python"],
+  "n8n": {
+    "credentials": [
+      "dist/credentials/TelethonApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Telethon.node.js",
+      "dist/nodes/TelethonTrigger.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.0.0",
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4"
+	}
+}
