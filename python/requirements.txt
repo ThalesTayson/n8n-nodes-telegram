@@ -1,7 +1,0 @@
-telethon
-flask
-aiohttp
-python-dotenv
-Flask==3.0.3
-Telethon==1.36.0
-requests

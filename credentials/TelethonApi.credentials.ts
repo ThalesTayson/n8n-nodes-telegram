@@ -82,6 +82,9 @@ export class TelethonApi implements ICredentialType {
 			displayName: 'API ID',
 			name: 'apiId',
 			type: 'string',
+			typeOptions: {
+				password: true,
+			},
 			default: '',
 			required: true,
 		},
